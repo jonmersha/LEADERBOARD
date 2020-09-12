@@ -62,6 +62,8 @@ public class ProjectSubmission extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 registerProject();
+                submissionSupport.cancel();
+
             }
         });
         submissionSupport.show();

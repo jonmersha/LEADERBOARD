@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="60dp"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:text="@string/submission_not_succesfull"
         app:layout_constraintBottom_toBottomOf="parent"

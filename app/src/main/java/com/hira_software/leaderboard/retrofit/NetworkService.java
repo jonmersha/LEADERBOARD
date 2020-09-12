@@ -26,13 +26,13 @@ public interface NetworkService {
             "Accept: application/json",
             "Content-Type: application/json"
     })
-    //@POST("1FAIpQLSf9d1TcNU6zc6KR8bSEM41Z1g1zl35cwZr2xyjIhaMAz8WChQ/viewform")
-    @POST("1FAIpQLSeQXj7Y9ANKFGAtCsyJ5Hx8vj-5eWj3vlo3nnSZYpRf6UGKgw/formResponse")
+    @POST("1FAIpQLSf9d1TcNU6zc6KR8bSEM41Z1g1zl35cwZr2xyjIhaMAz8WChQ/viewform")
+//    @POST("1FAIpQLSeQXj7Y9ANKFGAtCsyJ5Hx8vj-5eWj3vlo3nnSZYpRf6UGKgw/formResponse")
     @FormUrlEncoded
     Call<String> googleForm(
-            @Field("entry.103352098") String firstName,
-            @Field("entry.986621369") String lastName,
-            @Field("entry.743986810") String emailAdress,
-            @Field("entry.156705721") String projectLink
+            @Field("entry.2006916086") String firstName,
+            @Field("entry.1877115667") String lastName,
+            @Field("entry.1824927963") String emailAdress,
+            @Field("entry.284483984") String projectLink
                                   );
 }

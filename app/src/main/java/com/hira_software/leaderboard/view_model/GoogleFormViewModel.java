@@ -33,7 +33,7 @@ public class GoogleFormViewModel extends AndroidViewModel {
     }
 
     public MutableLiveData<String> getFormResponse(String firstName, String lastName, String emialAddress, String projectName) {
-        formResponseMutableLiveData=repository.getFormResponseMutableLiveData();
+        formResponseMutableLiveData=repository.getFormResponseMutableLiveData(firstName,lastName,emialAddress,projectName);
        return formResponseMutableLiveData;
     }
 }

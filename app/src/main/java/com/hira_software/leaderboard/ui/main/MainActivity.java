@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void submitProject(MenuItem item) {
-        Toast.makeText(this, "Subbmit Project", Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(this, ProjectSubmission.class);
         startActivity(intent);
     }

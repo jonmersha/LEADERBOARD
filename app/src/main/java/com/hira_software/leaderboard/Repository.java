@@ -29,7 +29,7 @@ public class Repository {
 public Repository(Application application,boolean form){
     String baseUrl="https://gadsapi.herokuapp.com/";
     if(form){
-        baseUrl="https://docs.google.com/forms/u/0/d/e/";
+        baseUrl="https://docs.google.com/forms/d/e/";
     }
     retrofit=new Retrofit.Builder()
             .baseUrl(baseUrl)
@@ -47,8 +47,8 @@ public Repository(Application application,boolean form){
         return topHourlyList;
     }
 
-    public MutableLiveData<String> getFormResponseMutableLiveData() {
-        submitForm("Yohannes","mitike","jonmersha@gmail.com","Android on github");
+    public MutableLiveData<String> getFormResponseMutableLiveData(String firstName, String lastName, String emialAddress, String projectName) {
+        submitForm(firstName,lastName,emialAddress,projectName);
         return registrationResponse;
     }
     public void getHourly(){
